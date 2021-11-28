@@ -99,7 +99,7 @@ COPY sku (id, style_id, size, quantity, sku) from './sku.csv' DELIMITER ',' CSV 
 -- \COPY features (id, product_id, feature, value) from './features.csv' DELIMITER ',' CSV HEADER ;
 -- \COPY photos (id, style_id, url, thumbnail_url) from './photosfixed.csv' DELIMITER ',' CSV HEADER ;
 -- \COPY sku (id, style_id, size, quantity, sku) from './sku.csv' DELIMITER ',' CSV HEADER ;
-
+-- \COPY related_product (id, product_id, related_ids) from './related.csv' DELIMITER ',' CSV HEADER;
 
 
 create index product_to_styles on styles(product_id);
