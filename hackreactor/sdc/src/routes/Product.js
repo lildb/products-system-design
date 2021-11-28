@@ -6,7 +6,7 @@ const {
   fetchStyles,
   fetchRelated,
   fetchTest,
-} = require('../controllers/controller.Product')
+} = require('../controllers/controller.Product');
 
 router.get('/', fetchProducts);
 
@@ -17,4 +17,4 @@ router.get('/:product_id/styles', fetchStyles);
 router.get('/:product_id/related', fetchRelated);
 
 
-module.exports = router
+module.exports = router;
