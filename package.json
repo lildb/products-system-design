@@ -4,8 +4,9 @@
   "description": "Database design",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server-dev": "nodemon server.js"
+    "test": "jest",
+    "server-dev": "nodemon server.js",
+    "preroute": "sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,13 @@
     "express": "^4.17.1",
     "fast-csv": "^4.3.6",
     "fs": "^0.0.1-security",
+    "k6": "^0.0.0",
     "nodemon": "^2.0.15",
     "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "msw": "^0.35.0",
+    "supertest": "^6.1.6"
   }
 }
