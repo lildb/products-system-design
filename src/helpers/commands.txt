@@ -8,13 +8,12 @@ sudo -u postgres psql
 
 18.217.157.57
 
-sudo psql \
+psql \
    --host=18.217.157.57 \
    --port=5432 \
    --username=postgres \
    --password \
    --dbname=postgres
-
 
 
 

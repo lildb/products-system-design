@@ -27,12 +27,6 @@ module.exports = {
   // }),
 
 
-  
+
 };
 
-psql \
-   --host=18.217.157.57 \
-   --port=5432 \
-   --username=postgres \
-   --password \
-   --dbname=postgres
