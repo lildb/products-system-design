@@ -2,11 +2,12 @@
   "name": "npm",
   "version": "1.0.0",
   "description": "Database design",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
     "server-dev": "nodemon server.js",
-    "preroute": "sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000"
+    "preroute": "sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000",
+    "deploy": "npm run preroute && npm run server-dev"
   },
   "repository": {
     "type": "git",

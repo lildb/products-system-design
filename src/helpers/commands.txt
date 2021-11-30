@@ -1,0 +1,58 @@
+sudo vim /etc/postgresql/14/main/pg_hba.conf
+
+sudo vim /etc/postgresql/14/main/postgresql.conf
+
+sudo /etc/init.d/postgresql restart​
+
+sudo -u postgres psql
+
+18.217.157.57
+
+sudo psql \
+   --host=18.217.157.57 \
+   --port=5432 \
+   --username=postgres \
+   --password \
+   --dbname=postgres
+
+
+
+
+
+
+// nginx commands
+sudo systemctl start nginx.service
+sudo systemctl start nginx
+
+sudo systemctl status nginx.service
+
+cd /etc/nginx/conf.d
+cd /etc/nginx/nginx.conf
+
+error_log /var/log/nginx/error.log;
+access_log /var/log/nginx/access.log;
+
+
+http {
+  server {
+    listen 80;
+    access_log /var/log/nginx/access.log;
+
+    location / {
+      root /product-system-design
+    }
+  }
+
+
+}
+
+
+server {
+    root /home/ubuntu/public_html;
+
+    location /application1 {  }
+
+    location /images {
+        root /home/ubuntu/data;
+    }
+}
