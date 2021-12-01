@@ -13,7 +13,7 @@ psql \
    --port=5432 \
    --username=reactor \
    --password \
-   --dbname=test
+   --dbname=postgres
 
 psql <db> <username>
 
@@ -21,7 +21,7 @@ psql <db> <username>
 // aws commands
 ssh -i "sdc3cer.cer" ubuntu@ec2-18-217-157-57.us-east-2.compute.amazonaws.com
 
-//database
+//database - 205
 ssh -i "sdc3cer.cer" ubuntu@ec2-3-135-222-79.us-east-2.compute.amazonaws.com
 3.135.222.79
 
