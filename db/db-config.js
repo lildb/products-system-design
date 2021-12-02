@@ -18,4 +18,15 @@ module.exports = {
     port: 5432,
   }),
 
+  // pool:  new Pool({
+  //   user: 'postgres',
+  //   host: '18.217.157.57',
+  //   database: 'postgres',
+  //   password: 'root',
+  //   port: 5432,
+  // }),
+
+
+
 };
+
