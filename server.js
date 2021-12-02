@@ -14,6 +14,10 @@ app.use('/api/v1/products', productRoutes);
 app.use('/cart', cartRoutes);
 //app.get('/test', (req, res) => res.send('whats up from AWS'));
 
+app.get('/loaderio-190a0aad75644b6f15d2aa2f597bce3a', (req, res) => {
+  res.send('loaderio-190a0aad75644b6f15d2aa2f597bce3a')
+})
+
 app.listen(port, () => {
   console.log(`listening at http://localhost:${port}`)
 })

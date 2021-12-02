@@ -87,6 +87,8 @@ CREATE TABLE cart (
 
 );
 
+
+
 -- \COPY photos (id, style_id, url, thumbnail_url) from './photosfixed.csv' DELIMITER ',' CSV HEADER ;
 COPY product (id, name, slogan, description, category, default_price, styles) from '../../../data/product.csv' DELIMITER ',' CSV HEADER ;
 COPY styles (id, product_id, name, original_price, sale_price, default_val) from '../../../data/styles.csv' DELIMITER ',' CSV HEADER ;

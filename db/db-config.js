@@ -11,10 +11,10 @@ module.exports = {
   }),
 
   pool:  new Pool({
-    user: 'postgres',
-    host: 'localhost',
+    user: 'reactor',
+    host: '3.135.222.79',
     database: 'postgres',
-    password: 'password',
+    password: 'reactor',
     port: 5432,
   }),
 

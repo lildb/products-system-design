@@ -9,24 +9,41 @@ sudo -u postgres psql
 18.217.157.57
 
 psql \
-   --host=18.217.157.57 \
+   --host=3.135.222.79 \
    --port=5432 \
-   --username=postgres \
+   --username=reactor \
    --password \
    --dbname=postgres
 
+psql <db> <username>
 
+
+// aws commands
+ssh -i "sdc3cer.cer" ubuntu@ec2-18-217-157-57.us-east-2.compute.amazonaws.com
+
+//database - 205
+ssh -i "sdc3cer.cer" ubuntu@ec2-3-135-222-79.us-east-2.compute.amazonaws.com
+3.135.222.79
+
+//server1 - 249
+ssh -i "sdc3cer.cer" ubuntu@ec2-18-118-6-6.us-east-2.compute.amazonaws.com
+18.118.6.6
+
+//load-balancer 174
+ssh -i "sdc3cer.cer" ubuntu@ec2-18-188-29-108.us-east-2.compute.amazonaws.com
+18.188.29.108
 
 
 
 // nginx commands
 sudo systemctl start nginx.service
-sudo systemctl start nginx
+sudo systemctl restart nginx
 
 sudo systemctl status nginx.service
 
 cd /etc/nginx/conf.d
 cd /etc/nginx/nginx.conf
+sudo vim /etc/nginx/nginx.conf
 
 error_log /var/log/nginx/error.log;
 access_log /var/log/nginx/access.log;
@@ -55,3 +72,25 @@ server {
         root /home/ubuntu/data;
     }
 }
+
+
+
+
+
+
+
+////////////
+
+#server {
+#       listen 80;
+#       listen [::]:80;
+#
+#       server_name example.com;
+#
+#       root /var/www/example.com;
+#       index index.html;
+#
+#       location / {
+#               try_files $uri $uri/ =404;
+#       }
+
