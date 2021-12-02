@@ -12,7 +12,7 @@ module.exports = {
 
   pool:  new Pool({
     user: 'reactor',
-    host: 'http://3.135.222.79/',
+    host: '3.135.222.79',
     database: 'postgres',
     password: 'reactor',
     port: 5432,
