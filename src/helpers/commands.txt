@@ -27,11 +27,11 @@ ssh -i "sdc3cer.cer" ubuntu@ec2-3-135-222-79.us-east-2.compute.amazonaws.com
 
 //server1 - 249
 ssh -i "sdc3cer.cer" ubuntu@ec2-18-118-6-6.us-east-2.compute.amazonaws.com
-18.118.6.6
+3.144.200.166
 
 //load-balancer 174
-ssh -i "sdc3cer.cer" ubuntu@ec2-18-188-29-108.us-east-2.compute.amazonaws.com
-18.188.29.108
+ssh -i "sdc3pem.pem" ubuntu@ec2-18-117-236-131.us-east-2.compute.amazonaws.com
+18.117.236.131
 
 
 
