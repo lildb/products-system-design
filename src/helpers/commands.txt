@@ -17,7 +17,6 @@ psql \
 
 psql <db> <username>
 
-
 // aws commands
 ssh -i "sdc3cer.cer" ubuntu@ec2-18-217-157-57.us-east-2.compute.amazonaws.com
 
@@ -32,8 +31,6 @@ ssh -i "sdc3cer.cer" ubuntu@ec2-18-118-6-6.us-east-2.compute.amazonaws.com
 //load-balancer 174
 ssh -i "sdc3pem.pem" ubuntu@ec2-18-117-236-131.us-east-2.compute.amazonaws.com
 18.117.236.131
-
-
 
 // nginx commands
 sudo systemctl start nginx.service
@@ -58,10 +55,7 @@ http {
       root /product-system-design
     }
   }
-
-
 }
-
 
 server {
     root /home/ubuntu/public_html;
@@ -72,14 +66,6 @@ server {
         root /home/ubuntu/data;
     }
 }
-
-
-
-
-
-
-
-////////////
 
 #server {
 #       listen 80;
