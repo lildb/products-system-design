@@ -55,7 +55,6 @@ describe('/POST cart', () => {
   })
 })
 
-
 // should return json object
 // should return 200 status code
 // should specify json in content type header
