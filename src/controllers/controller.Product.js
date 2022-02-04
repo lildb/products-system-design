@@ -48,7 +48,6 @@ module.exports = {
     });
   },
 
-
   // app.get('/api/v1/products/:product_id/styles', fetchStyles);
   fetchStyles: (req, res) => {
     const payload = {};
@@ -106,7 +105,6 @@ module.exports = {
     })
   },
 
-
   // app.get('/test/:product_id/styles', fetchTest)
   fetchTest: (req, res) => {
     const { product_id: productId } = req.params;
@@ -127,10 +125,7 @@ module.exports = {
       }
       res.status(200).send(output)
     })
-
-
   },
-
 
   // app.get('api/v1/products/:product_id/related', fetchRelated);
   fetchRelated: (req, res) => {
