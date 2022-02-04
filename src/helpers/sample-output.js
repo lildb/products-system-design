@@ -13,9 +13,6 @@ results: [
     skus: {},
 ]
 
-//
-
-
 GET /products/:product_id/styles
 
 {
@@ -85,14 +82,3 @@ GET /products/:product_id/styles
     },
   // ...
 }
-
-
-
-
-
-
-
-///////////////////////////////
-
-
-
