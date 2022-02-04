@@ -82,12 +82,8 @@ CREATE TABLE photos (
 -- --okay
 -- \COPY photos (id, style_id, url, thumbnail_url) from './photosfixed.csv' DELIMITER ',' CSV HEADER ;
 
-
 -- COPY product (id, name, slogan, description, category, default_price, styles) from './product.csv' DELIMITER ',' CSV HEADER ;
 -- \COPY product (id, name, slogan, description, category, default_price) from './product.csv' DELIMITER ',' CSV HEADER ;
-
 -- \COPY features (id, product_id, feature, value) from './features.csv' DELIMITER ',' CSV HEADER ;
-
 -- \COPY sku (id, style_id, size, quantity, sku) from './sku.csv' DELIMITER ',' CSV HEADER ;
-
 -- COPY styles () from './styles.csv' DELIMITER ',' CSV HEADER ;
