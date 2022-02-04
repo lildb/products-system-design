@@ -1,7 +1,6 @@
 const { Client, Pool } = require('pg')
 
 module.exports = {
-
   connection: new Client({
     user: 'postgres',
     host: 'localhost',
