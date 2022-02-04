@@ -25,8 +25,5 @@ module.exports = {
   //   password: 'root',
   //   port: 5432,
   // }),
-
-
-
 };
 
